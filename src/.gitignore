@@ -1,0 +1,17 @@
+node_modules
+.wweb*
+.wwebjs_auth
+.env
+dist
+node_modules
+*.lock
+.idea
+.wwebjs_auth
+src/data/*
+!src/data/.gitkeep
+*.env
+package-lock.json
+tokens*
+tokens/*
+*.json
+.vscode

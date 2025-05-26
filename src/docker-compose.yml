@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  nodejs:
+    platform: linux/arm64
+    build: .
+    image: nodejs
+    container_name: nodejs
+    ports:
+      - "4001:4001"
+    restart: unless-stopped
+    environment:
+      - DISPLAY=:99
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./tokens:/usr/src/app/tokens
+    cap_add:
+      - SYS_ADMIN
