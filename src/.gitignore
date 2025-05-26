@@ -15,3 +15,4 @@ tokens*
 tokens/*
 *.json
 .vscode
+__teste__*
